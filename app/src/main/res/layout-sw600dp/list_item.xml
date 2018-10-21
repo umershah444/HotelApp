@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:padding="15dp"
+        android:id="@+id/imageFrame"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_gravity="center"
+            android:text="@string/flag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="#910303"
+        android:layout_weight="0.01"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+
+    <FrameLayout
+        android:padding="15dp"
+        android:id="@+id/curFrame"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/currency"
+            android:layout_gravity="center"
+            android:text="@string/currency"
+            android:textColor="#000"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="#910303"
+        android:layout_weight="0.01"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:padding="15dp"
+        android:id="@+id/rateFrame"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="#000"
+            android:id="@+id/rate"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@string/exchange_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

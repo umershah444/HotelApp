@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#910303"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <FrameLayout
+        android:background="#910303"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <ImageView
+        android:id="@+id/logo"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        <TextView
+            android:gravity="bottom|right"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:id="@+id/dateplace"
+            android:layout_height="match_parent"
+            android:text="MARGALA"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:background="#232222"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:text="@string/flag"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:text="@string/currency"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:text="@string/exchange_rate"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:background="#FFF"
+        android:id="@+id/list"
+        android:layout_weight="7.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+    <!--<LinearLayout
+        android:background="#232222"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+       &lt;!&ndash; <WebView
+            android:id="@+id/webView"
+            android:gravity="center"
+            android:text="BOTTOM TIP"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            />&ndash;&gt;
+
+
+    </LinearLayout>-->
+
+</LinearLayout>
